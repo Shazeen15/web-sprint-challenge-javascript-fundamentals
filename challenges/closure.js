@@ -1,5 +1,5 @@
 // ==== Closures ==== 
-
+console.log('closure.js TASKs');
 /* Task 1: Study the code below and explain in your own words why nested function can access the variable internal. */
 
 
@@ -17,8 +17,18 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+// nested function has access to internal variable because it the parents variable and the child function has access to what the varriable that the parent contains.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(parameter){
+  let sum = 0;
+  for(let i = 0; i <= parameter; i++){
+    sum += i;
+  }
+  return sum;
+}
+
+let summationResult = summation(4);
+console.log(summationResult);
